@@ -1,0 +1,262 @@
+@font-face {
+    font-family: "Rubik-Regular";
+    src: url("../fonts/Rubik/Rubik-Regular.ttf")
+}
+
+@font-face {
+    font-family: "Rubik-SemiBoldItalic";
+    src: url("../fonts/Rubik/Rubik-SemiBoldItalic.ttf")
+}
+
+* {
+    font-family: "Rubik-Regular";
+    margin: 0;
+    padding:0;
+}
+
+a {
+    text-decoration: none;
+}
+
+#label_error {
+    font-size:14px;
+    color:red;
+    margin-top:20px;
+}
+
+.alert-error{
+    color:white;
+    width:100%;
+    display:flex;
+    justify-content: center;
+    text-align:center;
+    margin-top:20px;
+}
+
+.alert-error > p{
+    width: 80%;
+    background-color: #9b3838;
+    padding:10px 0px 10px;
+    border-radius:7px;
+}
+
+.container-login {
+    display: grid;
+    grid-template-columns: 30%;
+    height:100vh;   
+}
+
+.container-login > #formulario{
+    background-color:#383838;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-login > #formulario > h2{
+    margin-bottom:20px;
+}
+
+.container-login > #formulario > form {
+    width: 60%;
+}
+
+.container-login > #formulario > form > div{
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+.container-login > #formulario > form > div > div {
+    display: grid;
+    grid-template-areas: "label"
+                         "input";
+    gap:5px;
+}
+
+.container-login > #formulario > form > div > div > input{
+    padding:10px;
+    background-color: #383838;
+    color:white;
+    border:1px solid white;
+    border-radius:7px;
+}
+
+.container-login > #formulario > form > p{
+    padding-top:20px;
+}
+
+.container-login > #formulario > form > button{
+    margin-top:20px;
+    padding: 8px;
+    background-color: #383838;
+    color:white;
+    border:1px solid white;
+}
+
+.container-login > #formulario > form > a > button{
+    margin-top:20px;
+    padding: 8px;
+    background-color: #383838;
+    color:white;
+    border:1px solid white;
+}
+
+nav{
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    background-color:#383838;
+    color:white;
+    height:50px;
+}
+
+nav > ul{
+    display: flex;
+    justify-content: flex-end;
+    padding-right:30px;
+}
+
+nav > h2{
+    padding-left:30px;
+}
+
+
+nav > ul > li{
+    display:inline;
+    margin-left:8px;
+}
+
+nav > ul > li > a{
+    text-decoration: none;
+    color:white;
+}
+
+hr {
+    margin:10px 0px 10px;
+    border:1px solid #ccc;
+}
+
+.container {
+    padding-top:100px;
+    width:100%;
+    display:flex;
+    justify-content:center;
+}
+
+.container > div{
+    width:80%;
+}
+
+.home {
+    display:grid;
+    grid-template-columns: 50% 50%;
+}
+
+.home > div > h4{
+    padding:20px 0px 10px 20px;
+    
+}
+
+.button-head {
+    margin: 10px 0px 10px;
+}
+
+.table {
+    padding-top:20px;
+    width:80%;
+    text-align:center;
+}
+
+.modal {
+    display:flex;
+    position: fixed;
+    height:100vh;
+    width:100vw;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal > .container-modal {
+    display:flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius:7px;
+}
+
+.modal > .container-modal > #head{
+    background-color:#383838;
+    color:white;
+    border-top-left-radius:7px;
+    border-top-right-radius:7px;
+}
+
+.modal > .container-modal > #head > h2{
+    padding:5px 0px 5px 5px;
+}
+
+.modal > .container-modal > #body{
+    padding:20px;
+}
+
+.modal > .container-modal > #body > form > button{
+    margin-top:10px;
+}
+
+.modal > .container-modal > #body > form > div{
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+}
+
+.modal > .container-modal > #body > form > div > div{
+    display: grid;
+    grid-template-areas: "label"
+                         "input";
+    gap:5px;
+}
+
+.modal > .container-modal > #body > form > div > div > input, select{
+    padding:8px;
+    width:200px;
+}
+
+.button{
+    padding:8px;
+    background-color: #383838;
+    color:white;
+    border:0px;
+}
+
+.perfil {
+    display:grid;
+    grid-template-columns: 50% 50%;
+}
+
+.perfil > div > form > div {
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+    margin-top:20px;
+}
+
+.perfil > div > form > button {
+    margin-top:20px;
+}
+
+.perfil > div > form > div > div {
+    display: grid;
+    grid-template-areas: "label"
+                         "input";
+    gap:5px;
+}
+
+.perfil > div > form > div > div > input {
+    padding:8px;   
+    width:200px;
+}
